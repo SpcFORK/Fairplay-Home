@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   if (BaseClass?.preload instanceof Function) {
-    await BaseClass.preload();
+    await BaseClass.preload(entry);
   }
 
   let m = new BaseClass(entry);

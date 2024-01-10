@@ -1,9 +1,11 @@
 window.Main = class Main {
 
-  static PageTitle = 'Main';
+  static PageTitle = 'FairplayHome';
   
   static async preload() {
 
+    
+    
   }
 
   constructor(entry) {

@@ -730,7 +730,7 @@ class Grecha {
     for (const tagName of MUNDANE_TAGS) {
       window[tagName] = (...children) => tag(tagName, ...children);
     }
-    
+
     // ---
 
     async function hydrate() {
@@ -3475,7 +3475,7 @@ class Grecha {
             }
 
             if (BaseClass?.preload instanceof Function) {
-              await BaseClass.preload();
+              await BaseClass.preload(entry);
             }
 
             let m = new BaseClass(entry);
@@ -3495,7 +3495,6 @@ class Grecha {
             blackFG.remove();
 
           })
-
         }
       }
     }
