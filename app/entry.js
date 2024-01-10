@@ -5,13 +5,13 @@ window.Main = class Main {
   static async preload(entry) {
 
     return {
-      
+      dont: 'kys'
     }
     
   }
 
   constructor(entry) {
-    
+    console.log()
   }
 
 }
